@@ -1,0 +1,21 @@
+---
+title: "sampling-exercise"
+author: "Elizabeth Guo"
+date: "10/1/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+x %>% 
+  filter(!is.na(red), !is.na(names)) %>% 
+  mutate(red_prop = red/25) %>% 
+  ggplot(aes(x = red_prop)) +
+  geom_histogram() 
+
+ 
+
+
